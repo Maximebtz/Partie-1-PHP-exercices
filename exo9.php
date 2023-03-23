@@ -1,17 +1,11 @@
 <?php
-$age = 18;
-$sexe = "H";
+$age = 20;
+$sexe = "F";
 
-if($age >= 18 and $age<=35 and $sexe = "F"){
+if (($age >= 20 and $age <= 35 and $sexe == "H")|| ($age >= 18 and $age <= 35 and $sexe == "F")){
     echo "La personne est imposable";
 }
-elseif($age >= 20 and $age<=35 and $sexe = "M"){
-    echo "La personne est imposable";
-}
-elseif($age < 20 and $age>35 and $sexe = "F"){
-    echo "La personne n'est pas imposable";
-}
-elseif($age <= 20 and $age>=35 and $sexe = "M"){
+else{
     echo "La personne n'est pas imposable";
 }
 ?>
