@@ -19,8 +19,10 @@ function direBonjour($langue, $name){
     default : echo "La langue ....";
   }
 }
+
 //Créer un boucle qui prend les valeurs de la première variable ($users)
 foreach($users as $key => $value){
+
 //Ecrire le mot traduit en fonction de la clef et de la valeur de $users
   direBonjour($value, $key); 
 } 

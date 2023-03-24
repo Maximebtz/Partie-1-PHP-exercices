@@ -8,7 +8,7 @@ $rendu = $verse - $paye;
 
 echo " Le montant rendu est <br>";
 
-//nombre de billets de 10
+//nombre de billets de 10 avec "floor" pour arrondi à un entier
 $nbBillet10 = floor($rendu / 10);
 $reste = $rendu % 10;
 
