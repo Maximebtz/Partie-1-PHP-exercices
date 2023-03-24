@@ -1,15 +1,18 @@
 <?php
 
-// date de fin de l'abonnement
-$naissance = new DateTime("1985-01-17");
-	
-// maintenant (au moment où le script est exécuté)
-$now_date = new DateTime("now");
+//date de naissance
+$birthDate = '1985-04-10';
+//date actuelle
+$currentDate = '2023-03-24';
 
-// différence des deux timestamps
-$diff = $naissance->getTimes() - $now_date->getTimes();
 
-// affichage
-echo "La différence entre ces deux dates est : $diff->format(%y, %m, %d)"
+//créer un 'New DateTime' 
+$startTime = new DateTime($birthDate);
+$diff = $startTime->diff(new DateTime($currentDate));
+
+//noter en années, mois, jours 
+echo $diff->y.' Years<br>';
+echo $diff->m.' Month<br>';
+echo $diff->d.' Days<br>';
 
 ?>
