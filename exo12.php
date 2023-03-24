@@ -7,7 +7,7 @@ $users = array(
   "Marie-Claire"=>"EN",
 );
 
-//Créer un fonction qui dira tel ou tel mot en fonction de la valeur ,(langue), assiociée
+//Créer un fonction qui dira tel ou tel mot en fonction de la valeur ,(langue=condition), assiociée
 function direBonjour($langue, $name){
   switch($langue){ //if
     case "FR" : echo "Salut ".$name."<br>";
@@ -22,8 +22,6 @@ function direBonjour($langue, $name){
 
 //Créer un boucle qui prend les valeurs de la première variable ($users)
 foreach($users as $key => $value){
-
-//Ecrire le mot traduit en fonction de la clef et de la valeur de $users
   direBonjour($value, $key); 
 } 
 
