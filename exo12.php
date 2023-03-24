@@ -22,7 +22,7 @@ function direBonjour($langue, $name){
 
 //Créer un boucle qui prend les valeurs de la première variable ($users)
 foreach($users as $key => $value){
-  direBonjour($value, $key); 
+  direBonjour($value, $key);
 } 
 
 ?>
@@ -32,7 +32,7 @@ foreach($users as $key => $value){
 
 
 
-/---------Solution 2---------/
+//---------Solution 2---------//
 // function showMessageFromName($name, $usertable, $translation) {
 //   $text = $translation[$usertable[$name]]." ".$name." !";
 //   echo $text;
